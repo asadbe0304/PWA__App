@@ -68,7 +68,7 @@ button:active {
   transform: translateY(2px);
 }
 
-.buttons{
+.buttons {
   width: 400px;
   display: flex;
   align-items: center;
@@ -76,22 +76,22 @@ button:active {
   justify-content: center;
   gap: 10px;
 }
-.calculator{
+.calculator {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-input{
+input {
   width: 280px;
   margin: 20px 0px;
   padding: 10px 20px;
   border: 1px solid #0379ff;
   border-radius: 10px;
-font-size: 24px;
+  font-size: 24px;
 }
 
-.opt{
+.opt {
   width: 25%;
   align-items: center;
   appearance: none;
@@ -127,14 +127,36 @@ font-size: 24px;
   will-change: box-shadow, transform;
   font-size: 24px;
 }
-.top{
+.top {
   margin-bottom: 10px;
 }
 
-main{
+main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
 }
+
+@media screen and (max-width: 450px) {
+  .calculator{
+    width: 100%;
+  }
+  input{
+    width: 85%;
+  }
+  .buttons{
+    width: 100%;
+  }
+  main{
+    width: 100%;
+  }
+  button{
+    width: 30%;
+  }
+  .opt{
+    width: 30%;
+  }
+}
+
